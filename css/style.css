@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url("../fonts/Oswald-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Oswald-light";
+    src: url("../fonts/Oswald-Light.ttf") format("truetype");
+}
+
+
+section {
+    height: 100vh; /* La hauteur de la section est égale à la hauteur de l'écran */
+    width: 100%; /* La largeur de la section est égale à la largeur de l'écran */
+}
+  /* Styles pour chaque section individuellement */
+#section1 { background-color: #171717; }
+#section2 { background-color: #171717; }
+#section3 { background-color: #171717;
+
+}
+#section4 { background-color: #171717; }
+#section5 { background-color: #171717; }
+#section6 { background-color: #171717; }
+#section7 { background-color: #171717; }
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    height: 100%;
+    opacity: 0;
+}
+
+#container>div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+}
+
+#container>div>h2{
+    margin-top: 10%;
+    margin-left: 20%;
+}
+
+#container>div>p{
+    font-size: 24pt;
+    margin-top: 5%;
+    margin-left: 20%;
+    width: 65%;
+    line-height: 1.5;
+    font-family: "Oswald";
+    text-align: justify;
+    color: #ededed;
+    text-shadow: #444444 4px 3px;
+}
+
+#container>div>ol{
+    font-size: 24pt;
+    margin-top: 5%;
+    margin-left: 20%;
+    width: 65%;
+    line-height: 1.5;
+    font-family: "Oswald";
+    text-align: justify;
+    color: #ededed;
+    text-shadow: #444444 4px 3px;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+section>div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    height: 75%;
+
+}
+
+section>div>div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+}
+
+section>div>div:nth-child(1)>h2{
+    margin-top: 5%;
+    margin-left: 15%;
+}
+
+section>div>div:nth-child(1)>p{
+    font-size: 18pt;
+    margin-top: 2%;
+    margin-left: 15%;
+    width: 75%;
+    line-height: 1.5;
+    font-family: "Oswald";
+    text-align: justify;
+    color: #ededed;
+    text-shadow: #444444 4px 3px;
+}
+
+h2 {
+    font-size: 48pt;
+    text-align: center;
+    padding-top: 5%;
+    font-family: "Oswald";
+    color: #da0037d0;
+    text-shadow: #ededed 3px 2px;
+}
+
+#titreG1, #titreG2, #titreG3, #titreG4, #titreG5 {
+    opacity: 0;
+}
+
+#question1, #question2, #question3, #question4, #question5 {
+    opacity: 0;
+}
+
+#section1>h2 {
+    animation: translate4 2s;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #ededed;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: "Oswald";
+    animation: translate4 2s;
+}
+
+#plot1, #plot2, #plot3, #plot4, #plot5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#chart {
+    position: absolute;
+    top: 40%;
+    animation: translate4 2s;
+    width: 100%;
+}
+
+
+@keyframes translate4 {
+    0% {transform: 
+        translateY(50px);
+        opacity: 0;}
+    100% {transform: 
+        translateY(0px);
+        opacity: 1;}
+}
+
+#plot1, #plot5 {
+    margin-bottom: 20px;
+}
+
+#container, #context, #question{
+    animation: none;
+}
+
+#containerG, #Explication1, #plot1, #plot2, #plot3, #plot4, #plot5{
+    animation: none;
+}
+
+@keyframes appearFromLeft {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes appearFromTop {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+  
